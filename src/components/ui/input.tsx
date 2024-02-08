@@ -18,16 +18,19 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     };
 
     return (
-      <input
-        onChange={handleChange}
-        type={type}
-        className={cn(
-          "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background ",
-          className
-        )}
-        ref={ref}
-        {...props}
-      />
+      <>
+        <h1 className=" font-extrabold my-5">Find GitHub Users!</h1>
+        <input
+          onChange={handleChange}
+          type={type}
+          className={cn(
+            "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background ",
+            className
+          )}
+          ref={ref}
+          {...props}
+        />
+      </>
     );
   }
 );
